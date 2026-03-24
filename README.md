@@ -1,4 +1,4 @@
-![Uploading image.png…]()
+<img width="1224" height="338" alt="image" src="https://github.com/user-attachments/assets/e975c4c2-5b4e-45e8-a4d5-33e31aeb84a2" />
 
 # 完蛋，我被龙虾包围了
 
