@@ -139,7 +139,9 @@
 
 这是一个无依赖的纯前端原型。
 
-直接打开 [index.html](/Users/ryan/Documents/MyCode/fightclaws/index.html) 即可游玩。
+直接在线游玩：
+
+https://muryanice.github.io/fightclaw/
 
 ## 项目状态
 
