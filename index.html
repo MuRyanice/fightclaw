@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>完蛋，我被龙虾包围了</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="background-glow background-glow-a"></div>
+    <div class="background-glow background-glow-b"></div>
+    <main class="app-shell">
+      <section class="hero-panel">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">文字模拟职场生存游戏</p>
+          <h1>完蛋，我被龙虾包围了</h1>
+          <p class="hero-copy">
+            你刚入职龙虾科技，整个部门只剩你一个真人。32 只赛博龙虾正在为算力、预算、绩效和老板宠爱打成一锅红汤。
+          </p>
+          <div class="hero-actions">
+            <button id="start-game" class="primary-button">开始 30 天试用期</button>
+            <button id="toggle-codex" class="secondary-button">查看龙虾图鉴</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard">
+        <article class="panel status-panel">
+          <div class="panel-title-row">
+            <h2>试用期状态</h2>
+            <span id="day-badge" class="day-badge">Day 0 / 30</span>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span>老板印象</span>
+              <strong id="stat-boss">50</strong>
+            </div>
+            <div class="stat-card">
+              <span>人类体力</span>
+              <strong id="stat-energy">50</strong>
+            </div>
+            <div class="stat-card danger">
+              <span>替代风险</span>
+              <strong id="stat-risk">50</strong>
+            </div>
+            <div class="stat-card">
+              <span>AI 敌意</span>
+              <strong id="stat-hostility">50</strong>
+            </div>
+            <div class="stat-card warning">
+              <span>到手工资</span>
+              <strong id="stat-salary">100</strong>
+            </div>
+          </div>
+          <div class="meter-group">
+            <div class="meter">
+              <label>证据库存</label>
+              <div class="meter-bar"><span id="evidence-meter"></span></div>
+              <small id="stat-evidence">0</small>
+            </div>
+            <div class="meter">
+              <label>派系支持度</label>
+              <div class="meter-bar"><span id="faction-meter"></span></div>
+              <small id="stat-alliance">0</small>
+            </div>
+          </div>
+          <div class="log-box">
+            <h3>人类日报</h3>
+            <ul id="daily-log"></ul>
+          </div>
+        </article>
+
+        <article class="panel event-panel">
+          <div class="panel-title-row">
+            <h2 id="event-title">入职须知</h2>
+            <span id="event-type" class="event-type">准备中</span>
+          </div>
+          <p id="event-description" class="event-description">
+            点击“开始 30 天试用期”，系统将为你生成第一天的工位噩梦。
+          </p>
+          <div id="active-claws" class="active-claws"></div>
+          <div class="chat-box">
+            <div class="chat-header">
+              <h3>部门群聊</h3>
+              <span id="chat-status" class="chat-status">静默中</span>
+            </div>
+            <div id="chat-feed" class="chat-feed"></div>
+          </div>
+          <div class="choices-header">
+            <h3>你的操作</h3>
+          </div>
+          <div id="choices" class="choices"></div>
+          <div id="result-box" class="result-box hidden"></div>
+          <div class="footer-actions">
+            <button id="next-day" class="primary-button hidden">进入下一天</button>
+            <button id="restart-game" class="ghost-button hidden">重新开局</button>
+          </div>
+        </article>
+      </section>
+
+      <section id="codex-panel" class="panel codex-panel hidden">
+        <div class="panel-title-row">
+          <h2>龙虾图鉴</h2>
+          <span id="codex-count" class="event-type">0 / 0</span>
+        </div>
+        <div id="codex-list" class="codex-list"></div>
+      </section>
+    </main>
+
+    <div id="ending-modal" class="ending-modal hidden">
+      <div class="ending-backdrop"></div>
+      <section class="ending-card">
+        <span id="ending-tone" class="ending-tone">结局</span>
+        <h2 id="ending-title">你死了，但死得不明不白</h2>
+        <p id="ending-copy" class="ending-copy"></p>
+        <p id="ending-stats" class="ending-stats"></p>
+        <button id="ending-restart" class="primary-button">再开一把</button>
+      </section>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
